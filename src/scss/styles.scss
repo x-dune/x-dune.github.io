@@ -1,0 +1,201 @@
+/* You can add global styles to this file, and also import other style files */
+@import './overwrite/_initial-variables.sass';
+@import '../../node_modules/bulma/sass/utilities/functions.sass';
+@import './overwrite/_derived-variables.sass';
+@import './bootstrap_utilities';
+@import '../../node_modules/bulma/bulma.sass';
+
+/*Class*/
+$primary-lighten: lighten($primary, 15);
+
+.text-header {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2.25rem;
+}
+
+.text-para-1{
+  font-size: 1.5rem;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.text-para-2{
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.d-flex{
+  display: flex;
+}
+
+/*Class*/
+
+%button-transition{
+  transition: all 0.25s ease-out;
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100vh;
+}
+
+nav.navbar{
+  border-bottom: 3px solid $primary;
+  .navbar-menu{
+    background-color: $light;
+  }
+  .navbar-item{
+    @extend %button-transition;
+  }
+
+  @media screen and (min-width: 1088px){
+    .navbar-item{
+      background-color: $light;
+      $size: 4px;
+      border-bottom: $size solid $light;
+      &:hover{
+        border-bottom: $size solid $primary;
+      }
+    }
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.bg-home {
+  background: url(../assets/pexels-photo-2058911.jpeg)
+    no-repeat top center/cover;
+}
+
+.bg-contact{
+  background: url(../assets/pexels-photo-2058911.jpeg)
+  no-repeat bottom center/cover;
+}
+
+%padding-fix-section{
+  padding: calc(3.25rem + 10px) 0;
+}
+
+section#home {
+  text-align: center;
+  background: rgba($color: $primary, $alpha: 0.5);
+  height: calc(100vh - 3.25rem);
+  .text-display{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+  i {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+  }
+  a.button{
+    @extend %button-transition;
+    text-transform: uppercase ;
+  }
+}
+
+section#featured {
+  @extend %padding-fix-section;
+  .columns {
+    margin: 0 1.5rem;
+  }
+  h2 {
+    text-align: center;
+  }
+  a.button{
+    @extend %button-transition;
+  }
+  hr{
+    background-color: $grey-lighter;
+  }
+}
+
+section#skills{
+  @extend %padding-fix-section;
+  background-image: linear-gradient(120deg, $primary, lighten($primary, 30));
+  h2{
+    color: $light;
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  @media screen and (min-width: 769px){
+    h3{
+      text-align: left;
+    }
+  }
+
+  .columns{
+    text-align: center;
+    .column{
+      flex: 0 1 auto;
+      a{
+        color: $grey-dark;
+        &:hover{
+          text-decoration: underline;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+section#contact {
+  background: rgba($color: $primary-lighten, $alpha: 0.5);
+  @mixin contact-button($color){
+    @extend %button-transition;
+    font-size: 1.25rem;
+    background-color: $grey-lighter;
+    i{
+      font-size: 1.5rem;
+      color: $color;
+    }
+    &:hover{
+      background-color: $color;
+      color: $light;
+      i{
+        color: $light;
+      }
+    }
+  }
+
+
+  a#contact-email{
+    @include contact-button($primary);
+  }
+  a#contact-github{
+    @include contact-button(#111);
+  }
+  a#contact-linkedin{
+    @include contact-button(#0077b5);
+  }
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  p{
+    span{
+      font-size: 1.2rem;
+    }
+  }
+}

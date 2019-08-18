@@ -1,0 +1,16 @@
+<section id="skills" class="bg-primary px-2">
+    <h2 class="title text-header">Skills</h2>
+    <div class="container">
+      <div class="box mb-2 py-3" *ngFor="let box of boxRender">
+        <h3 class="title is-4 mb-3">{{box.title}}</h3>
+        <div class="columns">
+          <div *ngFor="let skill of box.skills" class="mx-3 column">
+            <a [href]="skill.link">
+              <img [src]="skill.logo" [alt]="skill.title" height="100px" width="100px">
+              <p>{{skill.title}}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

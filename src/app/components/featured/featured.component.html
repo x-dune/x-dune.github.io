@@ -1,0 +1,35 @@
+<section id="featured">
+  <h2 class="title text-header">Featured Project</h2>
+  <div class="container">
+    <div *ngFor="let card of cardRender; index as i">
+      <div class="columns">
+        <div class="column">
+          <figure class="is-16by9 is-100-mobile">
+            <img [src]="card.img" alt>
+          </figure>
+        </div>
+        <div class="column">
+          <h3 class="title is-4">{{card.title}}</h3>
+          <p class="text-para-2 mb-4">{{card.subtitle}}</p>
+          <div class="mb-2">
+            <a class="button is-primary mr-1 mb-1 is-outlined" [href]="card.links.live">Live Demo</a>
+            <a class="button is-primary mr-1 mb-1 is-outlined" [href]="card.links.source">
+              <i class="fab fa-github mr-1"></i>Source Code
+            </a>
+          </div>
+          <div class="d-flex">
+            <a
+              *ngFor="let tech of card.techs"
+              class="mr-3"
+              [href]="tech.link"
+              [title]="tech.title"
+            >
+              <img [src]="tech.logo" height="50px" width="50px">
+            </a>
+          </div>
+        </div>
+      </div>
+        <hr *ngIf="i < (cardRender.length - 1)">
+    </div>
+  </div>
+</section>

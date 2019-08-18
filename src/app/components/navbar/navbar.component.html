@@ -1,0 +1,19 @@
+<nav class="navbar is-fixed-top is-light">
+  <div class="navbar-brand">
+    <a href="#home" class="navbar-item">
+      <img src="../../../assets/icon.png" alt="Logo" class="mr-2">ADAM HO
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" (click)="toggleHamburgerMenu()" id="navBurger">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu" id="navMenu">
+    <div class="navbar-end">
+      <a href="#featured" class="navbar-item" (click)="toggleHamburgerMenu()">Featured Project</a>
+      <a href="#skills" class="navbar-item" (click)="toggleHamburgerMenu()">Skills</a>
+      <a href="#contact" class="navbar-item" (click)="toggleHamburgerMenu()">Contact</a>
+    </div>
+  </div>
+</nav>
