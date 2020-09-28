@@ -3,3 +3,14 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+body {
+  @apply bg-gray-800;
+  @apply text-gray-300;
+  letter-spacing: -0.5px;
+  font-family: Montserrat, sans-serif;
+}
+
+button:focus {
+  outline: 0;
+}
