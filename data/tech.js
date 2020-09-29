@@ -2,13 +2,13 @@ const tech = [
   {
     label: "React / React Native",
     tooltip:
-      "After flirting with AngularJS, Angular and Vue, I've come back crawling to React",
+      "After flirting with Angular and Vue, I've come back crawling to React",
     img:
       "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
   },
   {
     label: "Flutter",
-    tooltip: "Actually, I am Getting bored of React Native",
+    tooltip: "Actually, I am getting bored of React Native",
     img: "techs/flutter.svg",
   },
   {
@@ -18,7 +18,6 @@ const tech = [
   },
   {
     label: "Node.js",
-    tooltip: "Node isn't a language, but I didn't wanna make a runtime section",
     img: "techs/nodejs.svg",
   },
   {
@@ -29,6 +28,7 @@ const tech = [
   },
   {
     label: "Elixir",
+    tooltip: "Delightful and non-pretentious FP language",
     img: "techs/elixir.png",
   },
   {

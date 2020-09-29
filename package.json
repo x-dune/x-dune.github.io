@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tippyjs/react": "^4.2.0",
     "eslint": "^7.9.0",
     "eslint-plugin-react": "^7.20.6",
     "next": "9.5.3",

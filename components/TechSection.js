@@ -1,4 +1,5 @@
 import tech from "../data/tech"
+import TechItem from "./TechItem"
 
 const remainder = tech.length % 3
 const tech3 = remainder ? tech.slice(0, tech.length - remainder) : tech
@@ -13,30 +14,19 @@ const TechSection = () => (
     </div>
     <div className="pl-10" />
     <div className="grid grid-cols-6 justify-items-center gap-5 h-full">
-      {tech3.map((x) => (
-        <div
-          key={x.label}
-          title={x.tooltip}
-          className="col-span-2 w-full flex justify-center rounded-md"
-        >
-          <img src={x.img} className="h-20 w-auto" />
-        </div>
+      {tech3.map((x, i) => (
+        <TechItem item={x} key={i} />
       ))}
-      {techRem.map((x) => (
-        <div
-          key={x.label}
-          title={x.tooltip}
-          className={`
-            ${
-              techRem.length === 1 // 1 || 2
-                ? "col-span-6"
-                : "col-span-3"
-            }
-            w-full flex justify-center rounded-md
-            `}
-        >
-          <img src={x.img} className="h-20 w-auto" />
-        </div>
+      {techRem.map((x, i) => (
+        <TechItem
+          item={x}
+          key={`rem-${i}`}
+          variant={
+            techRem.length === 1 // 1 || 2
+              ? "remainder-1"
+              : "remainder-2"
+          }
+        />
       ))}
     </div>
   </div>
