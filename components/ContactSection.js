@@ -49,7 +49,7 @@ const ContactSection = () => (
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://google.com"
+              href="/Adam Ho - Resume.pdf"
               className="underline text-blue-300 hover:text-blue-500 hover:no-underline"
             >
               resume

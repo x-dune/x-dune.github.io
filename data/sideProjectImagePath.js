@@ -1,19 +1,19 @@
 const sideProjectImagePath = {
-  laravel: "skills/back/laravel.png",
-  express: "skills/back/express.png",
-  graphql: "skills/back/graphql.png",
-  nextjs: "skills/back/nextjs.png",
+  laravel: "images/skills/back/laravel.png",
+  express: "images/skills/back/express.png",
+  graphql: "images/skills/back/graphql.png",
+  nextjs: "images/skills/back/nextjs.png",
 
-  postgres: "techs/postgresql.svg",
-  mongodb: "skills/db/mongodb.png",
+  postgres: "images/techs/postgresql.svg",
+  mongodb: "images/skills/db/mongodb.png",
 
-  bootstrap: "skills/css/bootstrap.png",
-  materialize: "skills/css/materialize.png",
+  bootstrap: "images/skills/css/bootstrap.png",
+  materialize: "images/skills/css/materialize.png",
 
-  react: "skills/js-front/react.png",
-  apollo: "skills/js-front/apollo.png",
+  react: "images/skills/js-front/react.png",
+  apollo: "images/skills/js-front/apollo.png",
 
-  nodejs: "techs/nodejs.svg",
+  nodejs: "images/techs/nodejs.svg",
 }
 
 export default sideProjectImagePath

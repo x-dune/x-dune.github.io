@@ -6,7 +6,7 @@ const sideProject = [
     subtitle:
       "A blog powered by Laravel. Featuring User Authentication, Data Verification and User Profile Customization",
     techs: [image.laravel, image.postgres, image.bootstrap],
-    img: "side-project/lblog1.png",
+    img: "images/side-project/lblog1.png",
     links: {
       live: "https://generic-lblog.herokuapp.com",
       source: "https://github.com/adamdune/lblog",
@@ -24,7 +24,7 @@ const sideProject = [
       image.apollo,
       image.bootstrap,
     ],
-    img: "side-project/spacex1.png",
+    img: "images/side-project/spacex1.png",
     links: {
       live: "https://spacex-api-view.herokuapp.com/",
       source: "https://github.com/adamdune/SpaceX-API-View",
@@ -42,7 +42,7 @@ const sideProject = [
       image.mongodb,
       image.materialize,
     ],
-    img: "side-project/poll1.png",
+    img: "images/side-project/poll1.png",
     links: {
       live: "https://generic-poll-app.herokuapp.com/",
       source: "https://github.com/adamdune/poll_app_2",
