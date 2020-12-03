@@ -4,7 +4,7 @@ const ContactButton = ({ children, colorClass, cursorClass, href }) => (
     flex
     flex-row
     items-center
-    hover:${colorClass}
+    ${colorClass}
     my-2
     px-5
     py-2

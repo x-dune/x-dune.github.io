@@ -12,19 +12,22 @@ const ContactSection = () => (
         </div>
         <div className="pt-2"></div>
         <div className="flex flex-col items-start">
-          <ContactButton colorClass="bg-purple-800" cursorClass="cursor-text">
+          <ContactButton
+            colorClass="hover:bg-purple-800"
+            cursorClass="cursor-text"
+          >
             <MailIcon className="h-8 w-8" />
             <span className="pl-4 text-md">adam.ho.buss@gmail (dot) com</span>
           </ContactButton>
           <ContactButton
-            colorClass="bg-blue-700"
+            colorClass="hover:bg-blue-700"
             href="https://www.linkedin.com/in/adam-ho/"
           >
             <LinkedInIcon className="h-8 w-8" />
             <span className="pl-4">linkedin.com/in/adam-ho/</span>
           </ContactButton>
           <ContactButton
-            colorClass="bg-black"
+            colorClass="hover:bg-black"
             href="https://github.com/adamdune"
           >
             <GithubIcon className="h-8 w-8" />
@@ -34,7 +37,7 @@ const ContactSection = () => (
             </div>
           </ContactButton>
           <ContactButton
-            colorClass="bg-red-800"
+            colorClass="hover:bg-red-800"
             cursorClass="cursor-not-allowed"
           >
             <SwitchIcon className="h-8 w-8" />
