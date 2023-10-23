@@ -1,5 +1,4 @@
 import { GithubIcon } from "./icons"
-import StyledButton from "./StyledButton"
 
 const SideProject = ({ item }) => (
   <div className="flex justify-center py-5">
@@ -11,9 +10,6 @@ const SideProject = ({ item }) => (
         <p>{item.subtitle}</p>
         <div className="pb-5" />
         <div className="flex flex-col lg:flex-row items-start text-gray-200">
-          <StyledButton Tag="a" href={item.links.live}>
-            Live Demo
-          </StyledButton>
           <div className="pb-2 lg:pb-0 pl-2" />
           <a
             className="bg-purple-700 px-4 py-2 rounded-md flex"
